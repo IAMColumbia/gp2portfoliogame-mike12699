@@ -1,1 +1,13 @@
 Release Notes version 1 POC
+
+-Adds the main sprites that will be the focus of the game
+-Each asteroid has their own spawn point which randomly happens over a certain amount of time
+-Adds the player controls to the "spirit" sprite; player controls the sprite by moving up and down
+-When player collides with asteroid, the asteroid sprite is destroyed on impact
+
+Goals for version 2 VS
+
+-Will add a background that also scrolls horizontally to show the illusion that the player is moving horizontally
+-Will add a "game over" screen when the player collides with an asteroid
+-Will add a score tracker in the UI while the player is playing the game
+-Will implement an object pool class to limit the amount of asteroids spawning at the same time
