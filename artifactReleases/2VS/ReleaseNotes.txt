@@ -1,1 +1,16 @@
 Release Notes version 2 Vertical Slice
+
+-Added a "Game Over" screen upon death when player hits an asteroid
+-Player can press the "Restart" button to try again
+-Player can now move left or right instead of strictly staying in the middle
+-Added a ScoreManager script that keeps track of score whenever the player dodges the asteroids
+-Added a background that scrolls horizontally
+-Added a camera animator game component in Unity that triggers a slight shake whenever the player moves up and down
+
+Room for Improvement for next milestone
+
+-I attempted using the ObjectPool script of my own and I'm honestly having struggles with it
+-The asteroids still do not disappear when they go off screen (having trouble with that)
+-I'll add a power up mechanic where it has a meter and a cooldown whenever it is used once
+-I'll add a title screen that includes instructions on how to play
+-The "Game Over" screen doesn't keep track of score yet (working on that to fix)
