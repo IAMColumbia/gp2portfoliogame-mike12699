@@ -1,1 +1,16 @@
 Release Notes version 3 Final
+
+-Added the appropriate menu screens for easy navigation
+-Added the power up script so the player can shoot at the asteroids
+-The projectile can only be fired once every 10 seconds.
+-Asteroids are destroyed when they reach off screen
+-Added a health bar at the top left of the game window (initially started with 1 health; now has 3)
+-Added a cooldown time period for the projectile at the bottom left of the game window (still buggy)
+-All objects are disabled when the game over screen is active.
+
+Changes for version 4 Final
+
+-Fix the cooldown time period so it actually counts down from 10 (only stops at 9)
+-Try to configure the object pooling for the asteroids (asteroids are destroyed instead)
+-Add some quality of life adjustments to make the player feel more engaged
+-Display the score the player gets when they reach the game over state.

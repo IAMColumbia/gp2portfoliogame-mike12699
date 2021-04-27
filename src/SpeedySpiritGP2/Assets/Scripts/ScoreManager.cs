@@ -19,6 +19,7 @@ public class ScoreManager : MonoBehaviour
         {
             score++;
             Debug.Log(score);
+            Destroy(collision.gameObject);
         }
     }
 }

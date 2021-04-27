@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     private Vector2 targetPos;
     public Animator camAnim;
-    public GameOverScreen GameOverScreen;
+    public GameObject spawner;
+    public GameObject gameOver;
+    public GameObject stopScore;
+    public Text healthDisplay;
     public float Yincrement;
     public float XIncrement;
     public float HorizontalSpeed;
@@ -16,7 +20,7 @@ public class Player : MonoBehaviour
     public float MinHeight;
     public float MinWidth;
     public float MaxWidth;
-    public int health = 1;
+    public int health = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -27,9 +31,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        healthDisplay.text = health.ToString();
+        //When player collides with an asteroid 3 times the Game Over screen loads
         if (health <= 0)
         {
-            SceneManager.LoadScene("GameOver");
+            spawner.SetActive(false);
+            gameOver.SetActive(true);
+            Destroy(gameObject);
+            Destroy(stopScore);
         }
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
