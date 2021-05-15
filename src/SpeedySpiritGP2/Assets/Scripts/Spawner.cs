@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour
     private float timeSpawn;
     public float startTimeSpawn;
     public float decreaseTime;
-    public float minTime = 0.72f;
+    public float minTime = 0.8f;
 
     // Update is called once per frame
     private void Update()
